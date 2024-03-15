@@ -19,11 +19,11 @@ while True:
         print(f"Seu saldo atual é R${saldo}")
     elif opcao == 2:
         valor_do_saque = int(input("Digite o valor do saque: R$"))
-        for cedula in notas_disponiveis:
-            while valor_do_saque >= cedula:
-                valor_do_saque -= cedula
-                saldo -= cedula
-                print(f"Total de R${cedula} sacado... [OK]")
+        for notas in notas_disponiveis:
+            while valor_do_saque >= notas:
+                valor_do_saque -= notas
+                saldo -= notas
+                print(f"Total de R${notas} sacado... [OK]")
         if valor_do_saque == 0:
             print(f"Saque no valor total de R${saldo} realizado com sucesso!")
         else:
