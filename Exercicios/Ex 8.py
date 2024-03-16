@@ -1,3 +1,6 @@
+#8. Jogo da Forca:
+#Crie o jogo da forca usando while.
+
 palavra = "jacare"
 
 letras_usuario = []
